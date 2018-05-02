@@ -1,6 +1,7 @@
 jobs:
   - name: '1'
     type: manifest
+    steps:
   - name: '2'
     type: manifest
     steps:
