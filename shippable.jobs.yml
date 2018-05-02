@@ -1,0 +1,26 @@
+jobs:
+  - name: '1'
+    type: manifest
+  - name: '2'
+    type: manifest
+    steps:
+      - IN: '1'
+  - name: '3'
+    type: manifest
+    steps:
+      - IN: '1'
+      - OUT: '2'
+  - name: '4'
+    type: manifest
+    steps:
+      - IN: '2'
+  - name: '5'
+    type: manifest
+    steps:
+      - IN: '2'
+      - OUT: '4'
+  - name: '6'
+    type: manifest
+    steps:
+      - IN: '5'
+      - OUT: '4'
